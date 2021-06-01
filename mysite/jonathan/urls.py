@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^our-history/$', views.OurHistoryPageView.as_view(), name='our-history'),
     url(r'^our-services/$', views.OurHistoryPageView.as_view(), name='our-services'),
     url(r'^premium/$', views.PremiumPageView.as_view(), name='premium'),
+    url(r'^404notfound/$', views.PremiumPageView.as_view(), name='404notfound'),
 ]

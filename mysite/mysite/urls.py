@@ -20,10 +20,14 @@ Including another URLconf
 #     path('admin/', admin.site.urls),
 #     path('jonathan/', include('jonathan.urls')),
 # ]
-from django.conf.urls import url, include # Add include to the imports here
+from django.conf.urls import handler404, url, include # Add include to the imports here
 from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('jonathan.urls')) # tell django to read urls.py in example app
 ]
+
+
+
+handler404='jonathan.views.error_404_exception'

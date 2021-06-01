@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEW MONT</title>
+    <title>Montygre</title>
     {% load static %}
     <link rel="stylesheet" href="{%static 'css/components.css' %}">
     <link rel="stylesheet" href="{% static 'css/icons.css' %}">
@@ -155,7 +155,7 @@
         <div class="line">
           <div class="margin2x">
              <!-- Image 1 -->
-             <a href="our-services-1.html" class="s-12 m-6 l-3 margin-m-bottom-30">
+             <a href="#" class="s-12 m-6 l-3 margin-m-bottom-30">
                 <div class="image-with-hover-overlay">
                   <div class="image-hover-overlay background-dark"> 
                     <div class="image-hover-overlay-content padding">
@@ -173,7 +173,7 @@
              </a>
              
              <!-- Image 2 -->
-             <a href="our-services-2.html" class="s-12 m-6 l-3 margin-m-bottom-30">
+             <a href="#" class="s-12 m-6 l-3 margin-m-bottom-30">
                 <div class="image-with-hover-overlay">
                   <div class="image-hover-overlay background-dark"> 
                     <div class="image-hover-overlay-content padding">
@@ -191,7 +191,7 @@
              </a>
              
              <!-- Image 3 -->
-             <a href="our-services-1.html" class="s-12 m-6 l-3 margin-m-bottom-30">
+             <a href="#" class="s-12 m-6 l-3 margin-m-bottom-30">
                 <div class="image-with-hover-overlay">
                   <div class="image-hover-overlay background-dark"> 
                     <div class="image-hover-overlay-content padding">
@@ -209,7 +209,7 @@
              </a>
              
              <!-- Image 4 -->
-             <a href="our-services-2.html" class="s-12 m-6 l-3 margin-m-bottom-30">
+             <a href="#" class="s-12 m-6 l-3 margin-m-bottom-30">
                 <div class="image-with-hover-overlay">
                   <div class="image-hover-overlay background-dark"> 
                     <div class="image-hover-overlay-content padding">
@@ -381,7 +381,8 @@
                 </div> 
               </div>  
               <!-- Photo -->
-              <img src="{% static 'img/File_010.jpeg'%}"/>
+              <img src="{% static 'img/File_010.jpeg'%}" style="object-fit: cover;
+              height: 450px"/>
             </div>                                                                                                                                                                                                              
           </div>
           
@@ -487,9 +488,7 @@
               <div class="image-hover-overlay background-primary"> 
                 <div class="image-hover-overlay-content padding">
                   <!-- Team Member Bio -->
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div> 
-              </div>   -->
+                
               <!-- Team Member Photo -->
               <!-- <img src="{% static 'img/team-02.jpg'%}"/>
             </div>                                                                                                                                                                                                              
@@ -690,8 +689,8 @@
           <p class="text-white text-size-20 margin-bottom-30">
             
           </p>
-          <p class="text-white text-handwrite text-size-50 margin-bottom-20">Do you need help?</p>
-          <a class="button text-white background-orange" href="contact.html" style="color: white;">Contact Our Team</a>  
+          <p class="text-white text-handwrite text-size-50 margin-bottom-20"> need help?</p>
+          <a class="button text-white background-orange" href="{% url 'contact' %}" style="color: white;">Contact Our Team</a>  
         </div>
       </section>
       
@@ -731,13 +730,13 @@
                
             </div>
             <div class="s-12 m-12 l-6">
-              <h3 class="text-size-40 text-m-size-25 margin-bottom-30">The Latest From <b>Our Blog</b></h3> 
+              <h3 class="text-size-40 text-m-size-25 margin-bottom-30">The Latest From <b>Montygre</b></h3> 
               <div class="carousel-default owl-carousel carousel-hide-arrows text-left">
                 <div class="item">
                   <div class="margin margin-bottom-30">
                     <div class="s-12 m-3 l-3">
                       <a class="image-hover-zoom margin-m-bottom-30" href="/">
-                        <img src="{% static 'img/img-02.jpg' %}" alt="">
+                        <img src="{% static 'img/File_013logo.jpeg' %}" alt="">
                       </a>  
                     </div>
                     <div class="s-12 m-9 l-9">
@@ -752,7 +751,7 @@
                   <div class="margin margin-bottom-30">
                     <div class="s-12 m-3 l-3">
                       <a class="image-hover-zoom margin-m-bottom-30" href="/">
-                        <img src="{% static 'img/img-03.jpg'%}" alt="">
+                        <img src="{% static 'img/File_010.jpeg'%}" alt="">
                       </a>  
                     </div>
                     <div class="s-12 m-9 l-9">
@@ -767,7 +766,7 @@
                   <div class="margin margin-bottom-30">
                     <div class="s-12 m-3 l-3">
                       <a class="image-hover-zoom margin-m-bottom-30" href="/">
-                        <img src="{% static 'img/img-04.jpg' %}" alt="">
+                        <img src="{% static 'img/croppedlogo.jpeg' %}" alt="">
                       </a>  
                     </div>
                     <div class="s-12 m-9 l-9">
@@ -861,15 +860,15 @@
             </div>
             <div class="s-12 m-6 l-3 xl-2">
                <h4 class="text-white text-strong margin-m-top-30">Useful Links</h4>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">FAQ</a><br>      
-               <a class="text-primary-hover" href="contact-1.html">Contact Us</a><br>
-               <a class="text-primary-hover" href="blog.html">Blog</a>
+               <a class="text-primary-hover" href="#">FAQ</a><br>      
+               <a class="text-primary-hover" href="#">Contact Us</a><br>
+               <a class="text-primary-hover" href="#">Blog</a>
             </div>
             <div class="s-12 m-6 l-3 xl-2">
                <h4 class="text-white text-strong margin-m-top-30">Term of Use</h4>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">Terms and Conditions</a><br>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">Refund Policy</a><br>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">Disclaimer</a>
+               <a class="text-primary-hover" href="#">Terms and Conditions</a><br>
+               <a class="text-primary-hover" href="#">Refund Policy</a><br>
+               <a class="text-primary-hover" href="#">Disclaimer</a>
             </div>
             <div class="s-12 m-6 l-3 xl-3">
                <h4 class="text-white text-strong margin-m-top-30">Contact Us</h4>
@@ -891,7 +890,7 @@
             <p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p>
           </div>
           <div class="s-12 l-6">
-            <a class="right text-size-12 text-primary-hover" href="https://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+            <a class="right text-size-12 text-primary-hover" href="#" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
           </div>
         </div>  
       </section>

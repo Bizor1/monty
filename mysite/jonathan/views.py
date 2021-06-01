@@ -61,6 +61,14 @@ class OurServicesPageView(TemplateView):
 class PremiumPageView(TemplateView):
     template_name = "premium.html"
 
+class NotFoundPageView(TemplateView):
+    
+    template_name = "404.html"
+    
+
+
+def error_404_exception(request, exception):
+    return render(request, '404.html')
 
 
 def index(request):

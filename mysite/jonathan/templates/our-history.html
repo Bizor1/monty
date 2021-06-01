@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Financer - New Amazing HTML5 Template</title>
+    <title>Montygre</title>
     {% load static %}   
     <link rel="stylesheet" href="{% static 'css/components.css' %}">
     <link rel="stylesheet" href="{% static 'css/icons.css' %}">
@@ -168,7 +168,7 @@
           </div>            
           <div class="line">  
             <div class="s-12 m-12 l-3 center">
-              <a href="contact-1.html" class="s-12 button border-radius background-primary text-size-20 text-white">Contact Us</a>
+              <a href="{% url 'contact' %}" class="s-12 button border-radius background-primary text-size-20 text-white">Contact Us</a>
             </div>
           </div>
             
@@ -194,7 +194,7 @@
         <div class="line"> 
           <div class="margin2x">
             <div class="hide-s hide-m hide-l xl-2">
-               <img src="{% static 'img/footer.jpg' %}" alt="">
+               <img src="{% static 'img/croppedlogo.jpeg' %}" alt="">
             </div>
             <div class="s-12 m-6 l-3 xl-3">
                <h4 class="text-white text-strong">Our Mission</h4>
@@ -205,17 +205,17 @@
             <div class="s-12 m-6 l-3 xl-2">
                <h4 class="text-white text-strong margin-m-top-30">Useful Links</h4>
                <a class="text-primary-hover" href="sample-post-without-sidebar.html">FAQ</a><br>      
-               <a class="text-primary-hover" href="contact-1.html">Contact Us</a><br>
+               <a class="text-primary-hover" href="{% url 'contact' %}">Contact Us</a><br>
                <a class="text-primary-hover" href="blog.html">Blog</a>
             </div>
             <div class="s-12 m-6 l-3 xl-2">
                <h4 class="text-white text-strong margin-m-top-30">Term of Use</h4>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">Terms and Conditions</a><br>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">Refund Policy</a><br>
-               <a class="text-primary-hover" href="sample-post-without-sidebar.html">Disclaimer</a>
+               <a class="text-primary-hover" href="#">Terms and Conditions</a><br>
+               <a class="text-primary-hover" href="#">Refund Policy</a><br>
+               <a class="text-primary-hover" href="#">Disclaimer</a>
             </div>
             <div class="s-12 m-6 l-3 xl-3">
-               <h4 class="text-white text-strong margin-m-top-30">Contact Us</h4>
+               <h4 class="text-white text-strong margin-m-top-30"> Contact Us</h4>
                 <a class="text-primary-hover" href="tel:0800452180050"><i class="icon-sli-screen-smartphone text-primary"></i> 0800 4521 800 50</a><br>
                 <a class="text-primary-hover" href="mailto:contact@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> contact@sampledomain.com</a><br>
                 <a class="text-primary-hover" href="mailto:office@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> office@sampledomain.com</a>
@@ -234,7 +234,7 @@
             <p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p>
           </div>
           <div class="s-12 l-6">
-            <a class="right text-size-12 text-primary-hover" href="https://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+            <a class="right text-size-12 text-primary-hover" href="#" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
           </div>
         </div>  
       </section>
